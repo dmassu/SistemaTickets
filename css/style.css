@@ -82,6 +82,27 @@ header {
     border-radius: 4px;
 }
 
+.equipo {
+    padding: 3.5em 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.equipo-card {
+    background-color: #ffffff;
+    border-radius: 4px;
+    width: 300px;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.equipo-card img {
+    width: 150px;
+    border-radius: 100%;
+}
+
 .btn-comprar {
     background-color: #e10073;
     color: #ffffff;
@@ -94,28 +115,29 @@ header {
 
 .contacto {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     padding: 3em;
     flex-wrap: wrap;
     background-color: #4a4a4a;
+    margin-bottom: 3em;
 }
 
 .contacto aside {
     min-width: 250px;
-    padding: 1em;
+    margin-bottom: 1em;
     color: #ffffff;
 }
 
 form {
+    flex: 1;
     min-width: 250px;
     color: #ffffff;
-    flex: 1;
-    gap: 2em;
+    margin-left: 2em;
 }
 
 form fieldset {
     border: none;
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     gap: 0.5em;
 }
@@ -138,4 +160,63 @@ button {
 
 button:hover {
     background-color: #b1005b;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+    background-color: #1d1d1d;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding-bottom: 50px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding-top: 1em;
+}
+
+.footer-columns div {
+    max-width: 250px;
+}
+
+.footer-columns a {
+    display: block;
+    color: #ffffff;
+    margin-top: 0.5em;
+    text-decoration: none;
+}
+
+.footer-columns a:hover {
+    text-decoration: underline;
+}
+
+.btn-centro-ayuda {
+    background-color: #e10073;
+    color: #ffffff;
+    padding: 0.7em 1.5em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
 }
